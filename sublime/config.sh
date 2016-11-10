@@ -2,6 +2,6 @@
 
 set -e
 
-echo "Nothing to configure"
+echo "Sublime nothing to configure"
 
 exit 0
