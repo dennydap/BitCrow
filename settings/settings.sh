@@ -44,6 +44,7 @@ if [ "$answer" == "y" ]
     sudo apt-get -y remove libreoffice*
 fi
 
+unity-control-center activity-log-manager
 unity-control-center display
 unity-control-center power
 unity-control-center screen
