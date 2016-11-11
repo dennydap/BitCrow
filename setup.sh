@@ -29,6 +29,7 @@ chmod +x $(dirname $0)/settings/settings.sh
 if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
   then
     ./$(dirname $0)/base/config.sh atom
+    ./$(dirname $0)/base/config.sh blueman
     ./$(dirname $0)/base/config.sh chrome
     ./$(dirname $0)/base/config.sh flatpak
     ./$(dirname $0)/base/config.sh franz
@@ -46,6 +47,7 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     sudo apt-get -y upgrade
 
     ./$(dirname $0)/base/install.sh atom
+    ./$(dirname $0)/base/install.sh blueman
     ./$(dirname $0)/base/install.sh chrome
     ./$(dirname $0)/base/install.sh flatpak
     ./$(dirname $0)/base/install.sh franz
