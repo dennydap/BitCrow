@@ -18,7 +18,7 @@ Running the setup script:
 If you have any suggestions as to what should be included please add a feature
 request in our [issues tracker](https://github.com/IronPeak/BitCrow/issues).
 
-## Example Script
+## Example Installation Script
 Making an installation script is easy, simply add a folder in the project
 directory with the same name as the application you are installing.
 ~~~~
@@ -97,6 +97,7 @@ sudo echo "Starting Script!"
 
 chmod +x $(dirname $0)/base/config.sh
 chmod +x $(dirname $0)/base/install.sh
+chmod +x $(dirname $0)/settings/settings.sh
 
 if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
   then
@@ -123,6 +124,11 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     # END EXAMPLE APP INSTALL
 
     sudo apt -y autoremove
+fi
+
+if [ \( "$1" == "settings" \) -o \( "$1" == "all" \) ]
+  then
+    ./$(dirname $0)/settings/settings.sh
 fi
 
 echo "Script finished successfully!"
