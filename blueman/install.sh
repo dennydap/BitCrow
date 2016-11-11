@@ -45,6 +45,6 @@ ControllerMode = $controllermode
 AutoEnable=true
 _EOF_"
 
-sudo service bluetooth retart
+sudo service bluetooth restart
 
 exit 0

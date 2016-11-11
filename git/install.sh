@@ -26,8 +26,8 @@ if [ $installgitlfs == "y" ]
     tar -zxvf git-lfs-linux-amd64-1.4.4.tar.gz
     rm git-lfs-linux-amd64-1.4.4.tar.gz
     chmod +x git-lfs-1.4.4/install.sh
-    (cd git-lfs-1.4.4 && sudo ./install.sh)
-    rm -rf git-lfs-1.4.4
+    cd git-lfs-1.4.4 && sudo ./install.sh && cd ..
+    sudo rm -rf git-lfs-1.4.4
     sudo git lfs install
 fi
 
