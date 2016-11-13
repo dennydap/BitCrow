@@ -31,12 +31,15 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh atom
     ./$(dirname $0)/base/config.sh blueman
     ./$(dirname $0)/base/config.sh chrome
+    ./$(dirname $0)/base/config.sh docker
     ./$(dirname $0)/base/config.sh flatpak
     ./$(dirname $0)/base/config.sh franz
     ./$(dirname $0)/base/config.sh git
+    ./$(dirname $0)/base/config.sh jenkins
     ./$(dirname $0)/base/config.sh monodevelop
     ./$(dirname $0)/base/config.sh nodejs
     ./$(dirname $0)/base/config.sh openssh
+    ./$(dirname $0)/base/config.sh python
     ./$(dirname $0)/base/config.sh remmina
     ./$(dirname $0)/base/config.sh sublime
     ./$(dirname $0)/base/config.sh vagrant
@@ -50,12 +53,15 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh atom
     ./$(dirname $0)/base/install.sh blueman
     ./$(dirname $0)/base/install.sh chrome
+    ./$(dirname $0)/base/install.sh docker
     ./$(dirname $0)/base/install.sh flatpak
     ./$(dirname $0)/base/install.sh franz
     ./$(dirname $0)/base/install.sh git
+    ./$(dirname $0)/base/install.sh jenkins
     ./$(dirname $0)/base/install.sh monodevelop
     ./$(dirname $0)/base/install.sh nodejs
     ./$(dirname $0)/base/install.sh openssh
+    ./$(dirname $0)/base/install.sh python
     ./$(dirname $0)/base/install.sh remmina
     ./$(dirname $0)/base/install.sh sublime
     ./$(dirname $0)/base/install.sh vagrant
