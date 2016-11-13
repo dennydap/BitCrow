@@ -23,25 +23,60 @@ if [ "$answer" == "y" ]
     sudo rm -rf /usr/share/applications/debian-xterm.desktop
 fi
 
-echo "Would you like uninstall firefox(y/n)?"
+echo "Would you like uninstall Firefox(y/n)?"
 read answer
 if [ "$answer" == "y" ]
   then
     sudo apt-get -y remove firefox
 fi
 
-echo "Would you like uninstall thunderbird(y/n)?"
+echo "Would you like uninstall Thunderbird(y/n)?"
 read answer
 if [ "$answer" == "y" ]
   then
     sudo apt-get -y remove thunderbird
 fi
 
-echo "Would you like uninstall libreoffice(y/n)?"
+echo "Would you like uninstall LibreOffice(y/n)?"
 read answer
 if [ "$answer" == "y" ]
   then
     sudo apt-get -y remove libreoffice*
+fi
+
+echo "Would you like uninstall AisleRiot(y/n)?"
+read answer
+if [ "$answer" == "y" ]
+  then
+    sudo apt-get -y remove aisleriot
+fi
+
+echo "Would you like uninstall Mahjongg(y/n)?"
+read answer
+if [ "$answer" == "y" ]
+  then
+    sudo apt-get -y remove gnome-mahjongg
+fi
+
+echo "Would you like uninstall OnBoard(y/n)?"
+read answer
+if [ "$answer" == "y" ]
+  then
+    sudo apt-get -y remove onboard
+fi
+
+echo "Would you like uninstall Mines(y/n)?"
+read answer
+if [ "$answer" == "y" ]
+  then
+    sudo apt-get -y remove gnome-mines
+fi
+
+echo "Would you like uninstall Sudoku(y/n)?"
+read answer
+if [ "$answer" == "y" ]
+  then
+    sudo apt-get -y remove gnome-sudoku
 fi
 
 unity-control-center activity-log-manager
