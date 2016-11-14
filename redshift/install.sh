@@ -11,5 +11,6 @@ Exec=redshift -l 65:19 -t 6400:1000
 Terminal=false
 X-GNOME-Autostart-enabled=true
 _EOF_"
+sudo chmod +x ~/.config/autostart/redshift.desktop
 
 exit 0
