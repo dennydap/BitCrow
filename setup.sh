@@ -40,7 +40,6 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh nodejs
     ./$(dirname $0)/base/config.sh openssh
     ./$(dirname $0)/base/config.sh python
-    ./$(dirname $0)/base/config.sh remmina
     ./$(dirname $0)/base/config.sh sublime
     ./$(dirname $0)/base/config.sh vagrant
 fi
@@ -62,7 +61,6 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh nodejs
     ./$(dirname $0)/base/install.sh openssh
     ./$(dirname $0)/base/install.sh python
-    ./$(dirname $0)/base/install.sh remmina
     ./$(dirname $0)/base/install.sh sublime
     ./$(dirname $0)/base/install.sh vagrant
 
