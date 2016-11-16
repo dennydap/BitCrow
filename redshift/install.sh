@@ -8,7 +8,7 @@ sudo bash -c "cat > ~/.config/autostart/redshift.desktop << _EOF_
 [Desktop Entry]
 Name=RedShift
 Comment=To help you sleep
-Exec=redshift -l 65:19 -t 6400:1000
+Exec=redshift -l 0:-19 -t 6500:1000 -b 1.0:0.5
 Icon=icon.svg
 Terminal=false
 Type=Application
