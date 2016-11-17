@@ -36,6 +36,7 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh franz
     ./$(dirname $0)/base/config.sh git
     ./$(dirname $0)/base/config.sh jenkins
+    ./$(dirname $0)/base/config.sh mono
     ./$(dirname $0)/base/config.sh monodevelop
     ./$(dirname $0)/base/config.sh nodejs
     ./$(dirname $0)/base/config.sh openssh
@@ -58,6 +59,7 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh franz
     ./$(dirname $0)/base/install.sh git
     ./$(dirname $0)/base/install.sh jenkins
+    ./$(dirname $0)/base/install.sh mono
     ./$(dirname $0)/base/install.sh monodevelop
     ./$(dirname $0)/base/install.sh nodejs
     ./$(dirname $0)/base/install.sh openssh
