@@ -20,7 +20,7 @@ Terminal=false
 Exec=flatpak run com.xamarin.MonoDevelop
 Name=MonoDevelop
 Comment=IDE for c# development
-Icon=/var/lib/flatpak/app/com.xamarin.MonoDevelop/current/active/export/share/icons/hicolor/scalable/apps/com.xamarin.MonoDevelop.svg
+Icon=/var/lib/flatpak/app/com.xamarin.MonoDevelop/current/active/export/share/icons/hicolor/48x48/apps/com.xamarin.MonoDevelop.png
 _EOF_"
 sudo chmod +x /usr/share/applications/monodevelop.desktop
 
