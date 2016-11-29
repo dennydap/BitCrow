@@ -47,6 +47,7 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh sublime
     ./$(dirname $0)/base/config.sh vagrant
     ./$(dirname $0)/base/config.sh vlc
+    ./$(dirname $0)/base/config.sh yarn
 fi
 
 if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
@@ -73,6 +74,7 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh sublime
     ./$(dirname $0)/base/install.sh vagrant
     ./$(dirname $0)/base/install.sh vlc
+    ./$(dirname $0)/base/install.sh yarn
 
     sudo apt -y autoremove
 fi
