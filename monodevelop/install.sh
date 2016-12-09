@@ -3,14 +3,8 @@
 set -e
 
 sudo flatpak uninstall com.xamarin.MonoDevelop || :
-wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/ || :
-sudo flatpak install gnome org.freedesktop.Platform 1.4 || :
-rm gnome-sdk.gpg
-
-wget https://download.mono-project.com/monodevelop/monodevelop-6.1.2.44-1.flatpak
-sudo flatpak install --bundle monodevelop-6.1.2.44-1.flatpak
-rm monodevelop-6.1.2.44-1.flatpak
+flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo || :
+flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref || :
 
 sudo bash -c "cat > /usr/share/applications/monodevelop.desktop << _EOF_
 [Desktop Entry]
