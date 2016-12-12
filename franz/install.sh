@@ -17,6 +17,7 @@ Terminal=false
 Type=Application
 Categories=Messaging
 X-GNOME-Autostart-enabled=$startup
+X-GNOME-Autostart-Delay=5
 _EOF_"
 sudo chmod +x /usr/share/applications/franz.desktop
 if [ "$startup" == "true" ]
