@@ -32,6 +32,7 @@ if [ \( "$1" == "config" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/config.sh jenkins
     ./$(dirname $0)/base/config.sh nodejs
     ./$(dirname $0)/base/config.sh openssh
+    ./$(dirname $0)/base/config.sh plex
     ./$(dirname $0)/base/config.sh python
     ./$(dirname $0)/base/config.sh yarn
 fi
@@ -46,6 +47,7 @@ if [ \( "$1" == "install" \) -o \( "$1" == "all" \) ]
     ./$(dirname $0)/base/install.sh jenkins
     ./$(dirname $0)/base/install.sh nodejs
     ./$(dirname $0)/base/install.sh openssh
+    ./$(dirname $0)/base/install.sh plex
     ./$(dirname $0)/base/install.sh python
     ./$(dirname $0)/base/install.sh yarn
 
